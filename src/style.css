@@ -1,0 +1,324 @@
+html , body{
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.layout{
+    width: 100vw;
+    background: linear-gradient(to top, #020202,#010101,#040505,#040A0C,#041115);
+    display: grid;
+}
+
+/*Barra de navegação*/
+.barranav{
+    width: 100%;
+    height: 65px;
+    background-color: #030303;
+    align-items: center;
+    border-bottom: 1px solid #292929;
+
+}
+/*Icone da barra de navegação*/
+.barranav .icbarra{
+    width: 18px;
+    height: 28px;
+    object-fit: cover;
+    transform: translate(26px, 15px);
+}
+/*Icone do YouTubeMusic*/
+.barranav .iclogo{
+    transform: translate(45px, 16px);
+    height: 24px;
+}
+/*Barra de pesquisa*/
+.barranav .buscar{
+    width: 35%;
+    height: 43px;
+    background-color: #292929;
+    display: flex;
+    transform: translate(342px, -22px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+}
+/*Icone de buscar*/
+.barranav .icbuscar{
+    width: 22px;
+    height: 22px;
+    object-fit: scale-down;
+    float: left;
+    margin-left: 20px;
+    color: #8c8c8c;
+}
+/*Input de pesquisa*/
+.barranav .brpesquisa{
+    width: 90%;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font: bold;
+}
+
+::-webkit-input-placeholder {
+    color: #8c8c8c;
+    transform: translate(10px, 2px);
+    font-size: 17px;
+ }
+/*Icone de conexao*/
+.barranav .ictela{
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    float: right;
+    transform: translate(-265px, -55px);
+
+}
+
+.barranav .icajuda{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    float: right;
+    transform: translate(-200px, -52px);
+}
+
+.barranav .iclogin{
+    text-decoration: none;
+    width: 90px;
+    padding: 8px;
+    float: right;
+    transform: translate(-58px, -57px);
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+
+}
+
+.meio{
+    width: 92vw;
+    display: flex;
+
+
+}
+
+.meio .menu{
+    width: 238px;
+    height: 100vh;
+    background-color: #030303;
+    border-right: 2px solid #292929;
+    margin-right: 90px;
+    display: block;
+}
+
+.meio .menu button{
+    display: flex;
+    width: 227px;
+    height: 47px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 8px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+.meio .menu .btn01{
+    background-color: #1D1D1D;
+}
+
+.meio .menu .btn01 span{
+    margin-top: 9px;
+    font-weight: bolder;
+    margin-left: 22px;
+    font-size: 16px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    font: italic;
+}
+
+.meio .menu .btn01 img{
+    width: 22px;
+    height: 24px;
+    object-fit: fill;
+    margin-left: 15px;
+}
+
+.meio .menu .btn02{
+    cursor: pointer;
+}
+
+.meio .menu .btn02 span{
+    width: 30px;
+    height: 30px;
+    margin-left: 22px;
+    margin-bottom: 2px;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    font: italic;
+    color: white;
+}
+
+.meio .menu .btn02 img{
+    width: 20px;
+    height: 20px;
+    object-fit: fill;
+    margin-left: 17px;
+    margin-bottom: 15px;
+
+}
+
+.meio .menu .btn02:hover{
+    background-color: #353535;
+}
+
+.meio .menu .btn03{
+    cursor: pointer;
+}
+
+.meio .menu .btn03 span{
+    width: 30px;
+    height: 30px;
+    margin-left: 22px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    font-size: medium;
+    font: italic;
+    color: white;
+}
+
+.meio .menu .btn03 img{
+    width: 20px;
+    height: 22px;
+    object-fit: fill;
+    margin-left: 17px;
+    margin-bottom: 30px;
+}
+
+.meio .menu .btn03:hover{
+    background-color: #353535;
+}
+
+.meio .menu .bp{
+    width: 300px;
+    height: 46px;
+    display: flex;
+}
+
+.meio .menu .bp::after{
+    content: "";
+    width: 195px;
+    height: 1px;
+    background-color: #292929;
+    margin-top: 10px;
+    transform: translate(20px);
+}
+
+.meio .menu .btn04{
+    background-color: #1D1D1D;
+    height: 34px;
+    width: 190px;
+    border-radius: 20px;
+    margin: 0 auto;
+    transform: translate(0px, -11px);
+    position: relative;
+    cursor: pointer;
+}
+
+.meio .menu .btn04 span{
+    display: flex;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    justify-content: center;
+    font: italic;
+    color: white;   
+}
+
+.meio .menu .btn04:hover{
+    background-color: #353535;
+}
+
+.meio .menu .msg{
+    width: 199px;
+    margin-left: 23px;
+    margin-top: -3px;
+    
+}
+
+.meio .menu .msg span{
+    color: #8C898C;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.meio .conteudo{
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.conteudo::-webkit-scrollbar{
+    width: 15px;
+}
+
+  
+.conteudo::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+  
+.conteudo::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+.meio .conteudo .opcoes01{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    width: 99%;
+    padding: 5px;
+    overflow-x: scroll;
+    background-color: transparent;
+}
+
+.meio .conteudo .opcoes01 button{
+    margin-left: 40px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #292929;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.meio .conteudo h1{
+    color: black;
+    font-size: 35px;
+    margin-top: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
