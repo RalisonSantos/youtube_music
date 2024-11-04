@@ -1,39 +1,38 @@
+/*Definir o tamanho da nossa página*/
 html , body{
     width: 100vw;
     margin: 0;
     overflow: hidden;
 
 }
-
+/*Conteúdo do nosso site*/
 .layout{
     width: 100vw;
-    background: linear-gradient(to top, #020202,#010101,#040505,#040A0C,#041115);
+    background: linear-gradient(to top, #020202 10%,#010101,#040505,#040A0C,#041115);
     display: grid;
 }
-
 /*Barra de navegação*/
-.barranav{
+.navbar{
     width: 100%;
     height: 65px;
-    background-color: #030303;
+    background-color: #030303 ;
     align-items: center;
     border-bottom: 1px solid #292929;
-
 }
 /*Icone da barra de navegação*/
-.barranav .icbarra{
+.navbar .icbarra{
     width: 18px;
     height: 28px;
     object-fit: cover;
     transform: translate(26px, 15px);
 }
 /*Icone do YouTubeMusic*/
-.barranav .iclogo{
+.navbar .iclogo{
     transform: translate(45px, 16px);
     height: 24px;
 }
 /*Barra de pesquisa*/
-.barranav .buscar{
+.navbar .buscar{
     width: 35%;
     height: 43px;
     background-color: #292929;
@@ -45,7 +44,7 @@ html , body{
     color: white;
 }
 /*Icone de buscar*/
-.barranav .icbuscar{
+.navbar .icbuscar{
     width: 22px;
     height: 22px;
     object-fit: scale-down;
@@ -54,7 +53,7 @@ html , body{
     color: #8c8c8c;
 }
 /*Input de pesquisa*/
-.barranav .brpesquisa{
+.navbar .brpesquisa{
     width: 90%;
     height: 35px;
     border: none;
@@ -62,14 +61,14 @@ html , body{
     color: white;
     font: bold;
 }
-
+/*Alterar a o conteúdo da barra de pesquisa*/
 ::-webkit-input-placeholder {
     color: #8c8c8c;
     transform: translate(10px, 2px);
     font-size: 17px;
  }
 /*Icone de conexao*/
-.barranav .ictela{
+.navbar .ictela{
     width: 28px;
     height: 28px;
     object-fit: cover;
@@ -77,16 +76,16 @@ html , body{
     transform: translate(-265px, -55px);
 
 }
-
-.barranav .icajuda{
+/*Icone de ajuda(três pontinhos)*/
+.navbar .icajuda{
     width: 22px;
     height: 22px;
     object-fit: cover;
     float: right;
     transform: translate(-200px, -52px);
 }
-
-.barranav .iclogin{
+/*Botão de login*/
+.navbar .iclogin{
     text-decoration: none;
     width: 90px;
     padding: 8px;
@@ -99,17 +98,13 @@ html , body{
     background-color: white;
     color: black;
     text-align: center;
-
-
 }
-
+/*Parte principal de todo conteúdo do site*/
 .meio{
     width: 92vw;
-    display: flex;
-
-
+ display: flex;
 }
-
+/*Menu lateral*/
 .meio .menu{
     width: 238px;
     height: 100vh;
@@ -118,7 +113,7 @@ html , body{
     margin-right: 90px;
     display: block;
 }
-
+/*Botões do meu menu*/
 .meio .menu button{
     display: flex;
     width: 227px;
@@ -131,11 +126,11 @@ html , body{
     text-align: center;
     border: none;
 }
-
+/*Botão de ínico*/
 .meio .menu .btn01{
     background-color: #1D1D1D;
 }
-
+/*Mensagem do botão de ínico*/
 .meio .menu .btn01 span{
     margin-top: 9px;
     font-weight: bolder;
@@ -148,18 +143,18 @@ html , body{
     justify-content: center;
     font: italic;
 }
-
+/*Imagem do botão de ínico*/
 .meio .menu .btn01 img{
     width: 22px;
     height: 24px;
     object-fit: fill;
     margin-left: 15px;
 }
-
+/*Botão de explorar*/
 .meio .menu .btn02{
     cursor: pointer;
 }
-
+/*Mensagem do botão de explorar*/
 .meio .menu .btn02 span{
     width: 30px;
     height: 30px;
@@ -171,7 +166,7 @@ html , body{
     font: italic;
     color: white;
 }
-
+/*Imagem do botão de explorar*/
 .meio .menu .btn02 img{
     width: 20px;
     height: 20px;
@@ -180,15 +175,15 @@ html , body{
     margin-bottom: 15px;
 
 }
-
+/*Animação do botão de explorar*/
 .meio .menu .btn02:hover{
     background-color: #353535;
 }
-
+/*Botão de explorar*/
 .meio .menu .btn03{
     cursor: pointer;
 }
-
+/*Mensagem do botão de explorar*/
 .meio .menu .btn03 span{
     width: 30px;
     height: 30px;
@@ -200,7 +195,7 @@ html , body{
     font: italic;
     color: white;
 }
-
+/*Imgagem do botão de explorar*/
 .meio .menu .btn03 img{
     width: 20px;
     height: 22px;
@@ -208,18 +203,18 @@ html , body{
     margin-left: 17px;
     margin-bottom: 30px;
 }
-
+/*Animação do botão de explorar*/
 .meio .menu .btn03:hover{
     background-color: #353535;
 }
-
-.meio .menu .bp{
+/*Elemento de base para o pseudo elemento*/
+.meio .menu .pe{
     width: 300px;
     height: 46px;
     display: flex;
 }
-
-.meio .menu .bp::after{
+/*Pseudo elemento(linha abaixo dos botoẽs*/
+.meio .menu .pe::after{
     content: "";
     width: 195px;
     height: 1px;
@@ -227,7 +222,7 @@ html , body{
     margin-top: 10px;
     transform: translate(20px);
 }
-
+/*Botão de fazer login*/
 .meio .menu .btn04{
     background-color: #1D1D1D;
     height: 34px;
@@ -238,7 +233,7 @@ html , body{
     position: relative;
     cursor: pointer;
 }
-
+/*Mensagem do botão de fazer login*/
 .meio .menu .btn04 span{
     display: flex;
     width: 200px;
@@ -249,24 +244,23 @@ html , body{
     font: italic;
     color: white;   
 }
-
+/*Animação do botão de fazer login*/
 .meio .menu .btn04:hover{
     background-color: #353535;
 }
-
+/*Mensagem abaixo do botão de fazer login*/
 .meio .menu .msg{
     width: 199px;
     margin-left: 23px;
-    margin-top: -3px;
-    
+    margin-top: -3px; 
 }
-
+/*Alterando a mensagem*/
 .meio .menu .msg span{
     color: #8C898C;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
 }
-
+/*Definir padrão da minha sction*/
 .meio .conteudo{
     margin-top: 30px;
     width: 100%;
@@ -275,21 +269,21 @@ html , body{
     position: relative;
     overflow-y: scroll;
 }
-
-.conteudo::-webkit-scrollbar{
+/*Alterar o tamanho do meu scroll*/
+.meio .conteudo::-webkit-scrollbar{
     width: 15px;
 }
 
-  
-.conteudo::-webkit-scrollbar-thumb {
+/*Alterar a cor da thumb do meu scroll*/  
+.meio .conteudo::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
-  
-.conteudo::-webkit-scrollbar-track {
+/*Alterar a cor da track do meu scroll*/
+.meio .conteudo::-webkit-scrollbar-track {
     background: transparent;
 
 }
-
+/*Definir um padrão das opções*/
 .meio .conteudo .opcoes01{
     position: absolute;
     display: grid;
@@ -299,7 +293,7 @@ html , body{
     overflow-x: scroll;
     background-color: transparent;
 }
-
+/*Definir um padrão dos botões das opções*/
 .meio .conteudo .opcoes01 button{
     margin-left: 40px;
     height: 30px;
@@ -314,7 +308,7 @@ html , body{
     align-items: center;
     font-size: 14px;
 }
-
+/*Estilizar o h1*/
 .meio .conteudo h1{
     color: black;
     font-size: 35px;
